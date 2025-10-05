@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
+       
+  <title>Animal & Bird</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #c8e6c9, #a5d6a7, #81c784); /* soft green gradient */
+      animation: gradientBG 15s ease infinite;
+      background-size: 400% 400%;
+    }
+
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    .container {
+      background: white;
+      padding: 50px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+
+    .container h1 {
+      margin-bottom: 30px;
+      font-size: 32px;
+      color: #2e7d32;
+    }
+
+    .buttons a {
+      display: inline-block;
+      margin: 15px;
+      padding: 15px 40px;
+      font-size: 20px;
+      background-color: #43a047;
+      color: white;
+      text-decoration: none;
+      border-radius: 12px;
+      transition: 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .buttons a:hover {
+      background-color: #2e7d32;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div id="header"></div>
+
+  <div class="container">
+    <h1>Explore</h1>
+    <div class="buttons">
+      <a href="ab.html"> Animals</a>
+      <a href="ab2.html"> Birds</a>
+    </div>
+  </div>
+   <script>
+    fetch('h.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('header').innerHTML = data;
+      });
+  </script>
+</body>
+</html>

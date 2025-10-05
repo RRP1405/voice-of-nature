@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
+        <title>Registration</title>
+         <link rel="stylesheet" href="style.css" />
+       </head>
+       <body>
+
+        <section id="contact">
+  <center><h2 class="py-3">Registration Form To Join with us</h2></center>
+
+  <form class="contact-form md-5">
+    <div class="form-group">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="age">Your Age</label>
+      <input type="number" id="age" placeholder="Enter your age" required>
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" placeholder="Enter your phone number" pattern="[0-9]{10}" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="email">Your Email</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="message">Your Message</label>
+      <textarea id="message" rows="5" placeholder="Type your message..." required></textarea>
+    </div>
+
+    <div class="button"> 
+    <a href="th.html">Submit</a>
+  </div>
+  </form>
+</section>
+
+<style>
+  
+  .contact {
+  padding: 60px 20px;
+  background: linear-gradient(to bottom, #e3f2fd, #ffffff);
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 32px;
+  color: #0d47a1;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #42a5f5;
+  outline: none;
+  box-shadow: 0 0 8px rgba(66, 165, 245, 0.3);
+}
+
+.button a {
+      display: inline-block;
+      margin: 15px;
+      padding:20px;
+      
+      background-color: #43a047;
+      color: white;
+      text-decoration: none;
+      border-radius: 12px;
+      transition: 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .button a:hover {
+      background-color: #2e7d32;
+      transform: scale(1.05);
+    }
+
+</style>
+</body>
+</html>

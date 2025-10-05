@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Animals</title>
+        
+        <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+
+        
+       
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    h2 {
+      text-align: center;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      border: 1px solid #888;
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background-color: #4CAF50;
+      color: white;
+    }
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    .section-buttons {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .section-buttons button {
+      padding: 10px 20px;
+      margin: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+
+    <h2>Animals Information</h2>
+
+
+  <table id="animalsTable" class="display">
+    <thead>
+      <tr>
+        <th>Animal</th>
+        <th>Type</th>
+        <th>Region</th>
+        <th>Average Lifetime</th>
+        <th>Conservation Status</th>
+      </tr>
+    </thead>
+    <tbody>
+    
+      <tr><td>Tiger</td><td>Mammal</td><td>Asia</td><td>10-15 years</td><td>Endangered</td></tr>
+      <tr><td>Elephant</td><td>Mammal</td><td>Africa, Asia</td><td>60-70 years</td><td>Vulnerable</td></tr>
+      <tr><td>Lion</td><td>Mammal</td><td>Africa</td><td>10-14 years</td><td>Vulnerable</td></tr>
+      <tr><td>Giraffe</td><td>Mammal</td><td>Africa</td><td>25 years</td><td>Vulnerable</td></tr>
+      <tr><td>Zebra</td><td>Mammal</td><td>Africa</td><td>20-30 years</td><td>Least Concern</td></tr>
+      <tr><td>Panda</td><td>Mammal</td><td>China</td><td>20 years</td><td>Vulnerable</td></tr>
+      <tr><td>Kangaroo</td><td>Mammal</td><td>Australia</td><td>8-12 years</td><td>Least Concern</td></tr>
+      <tr><td>Wolf</td><td>Mammal</td><td>North America, Eurasia</td><td>6-8 years</td><td>Least Concern</td></tr>
+      <tr><td>Bear</td><td>Mammal</td><td>North America, Eurasia</td><td>20-25 years</td><td>Least Concern</td></tr>
+      <tr><td>Cheetah</td><td>Mammal</td><td>Africa</td><td>10-12 years</td><td>Vulnerable</td></tr>
+
+      <tr><td>Rhinoceros</td><td>Mammal</td><td>Africa, Asia</td><td>35-50 years</td><td>Critically Endangered</td></tr>
+      <tr><td>Hippopotamus</td><td>Mammal</td><td>Africa</td><td>40-50 years</td><td>Vulnerable</td></tr>
+      <tr><td>Leopard</td><td>Mammal</td><td>Africa, Asia</td><td>12-17 years</td><td>Vulnerable</td></tr>
+      <tr><td>Fox</td><td>Mammal</td><td>Worldwide</td><td>2-5 years</td><td>Least Concern</td></tr>
+      <tr><td>Moose</td><td>Mammal</td><td>North America, Europe</td><td>15-25 years</td><td>Least Concern</td></tr>
+      <tr><td>Antelope</td><td>Mammal</td><td>Africa, Asia</td><td>10 years</td><td>Least Concern</td></tr>
+      <tr><td>Hyena</td><td>Mammal</td><td>Africa, Asia</td><td>12-25 years</td><td>Least Concern</td></tr>
+      <tr><td>Sloth</td><td>Mammal</td><td>Central and South America</td><td>20-30 years</td><td>Least Concern</td></tr>
+      <tr><td>Koala</td><td>Mammal</td><td>Australia</td><td>13-18 years</td><td>Vulnerable</td></tr>
+      <tr><td>Wolverine</td><td>Mammal</td><td>Northern Hemisphere</td><td>7-12 years</td><td>Least Concern</td></tr>
+
+      <tr><td>Chimpanzee</td><td>Mammal</td><td>Africa</td><td>40-50 years</td><td>Endangered</td></tr>
+      <tr><td>Orangutan</td><td>Mammal</td><td>Indonesia, Malaysia</td><td>30-40 years</td><td>Critically Endangered</td></tr>
+      <tr><td>Baboon</td><td>Mammal</td><td>Africa</td><td>20-30 years</td><td>Least Concern</td></tr>
+      <tr><td>Jaguar</td><td>Mammal</td><td>South America</td><td>12-15 years</td><td>Near Threatened</td></tr>
+      <tr><td>Armadillo</td><td>Mammal</td><td>South America</td><td>4-7 years</td><td>Least Concern</td></tr>
+      <tr><td>Raccoon</td><td>Mammal</td><td>North America</td><td>2-3 years</td><td>Least Concern</td></tr>
+      <tr><td>Otter</td><td>Mammal</td><td>Worldwide (except Australia & Antarctica)</td><td>10-15 years</td><td>Near Threatened</td></tr>
+      <tr><td>Platypus</td><td>Mammal</td><td>Australia</td><td>10-17 years</td><td>Near Threatened</td></tr>
+      <tr><td>Badger</td><td>Mammal</td><td>Europe, Asia, North America</td><td>4-10 years</td><td>Least Concern</td></tr>
+      <tr><td>Mole</td><td>Mammal</td><td>North America, Europe, Asia</td><td>3-6 years</td><td>Least Concern</td></tr>
+
+      <tr><td>Porcupine</td><td>Mammal</td><td>Americas, Africa, Asia, Europe</td><td>5-7 years</td><td>Least Concern</td></tr>
+      <tr><td>Deer</td><td>Mammal</td><td>Worldwide</td><td>10-25 years</td><td>Least Concern</td></tr>
+      <tr><td>Boar</td><td>Mammal</td><td>Europe, Asia, North Africa</td><td>10-14 years</td><td>Least Concern</td></tr>
+      <tr><td>Bison</td><td>Mammal</td><td>North America, Europe</td><td>15-20 years</td><td>Near Threatened</td></tr>
+      <tr><td>Lemur</td><td>Mammal</td><td>Madagascar</td><td>15-20 years</td><td>Endangered</td></tr>
+      <tr><td>Manatee</td><td>Mammal</td><td>Atlantic Ocean</td><td>40 years</td><td>Vulnerable</td></tr>
+      <tr><td>Capybara</td><td>Mammal</td><td>South America</td><td>8-10 years</td><td>Least Concern</td></tr>
+      <tr><td>Tapir</td><td>Mammal</td><td>Central and South America, Southeast Asia</td><td>25-30 years</td><td>Vulnerable</td></tr>
+      <tr><td>Yak</td><td>Mammal</td><td>Himalayas, Mongolia</td><td>20-25 years</td><td>Least Concern</td></tr>
+      <tr><td>Okapi</td><td>Mammal</td><td>Central Africa</td><td>20-30 years</td><td>Endangered</td></tr>
+
+      <tr><td>Ibex</td><td>Mammal</td><td>Europe, North Africa, Central Asia</td><td>10-20 years</td><td>Least Concern</td></tr>
+      <tr><td>Gazelle</td><td>Mammal</td><td>Africa, Asia</td><td>10-12 years</td><td>Least Concern</td></tr>
+      <tr><td>Meerkat</td><td>Mammal</td><td>Southern Africa</td><td>12-14 years</td><td>Least Concern</td></tr>
+      <tr><td>Dhole</td><td>Mammal</td><td>Asia</td><td>10-13 years</td><td>Endangered</td></tr>
+      <tr><td>Saola</td><td>Mammal</td><td>Laos, Vietnam</td><td>Unknown (rare)</td><td>Critically Endangered</td></tr>
+      <tr><td>Markhor</td><td>Mammal</td><td>Central Asia</td><td>12-13 years</td><td>Near Threatened</td></tr>
+      <tr><td>Snow Leopard</td><td>Mammal</td><td>Central and South Asia</td><td>15-18 years</td><td>Vulnerable</td></tr>
+      <tr><td>Red Panda</td><td>Mammal</td><td>Himalayas, China</td><td>8-10 years</td><td>Endangered</td></tr>
+      <tr><td>Mountain Goat</td><td>Mammal</td><td>North America</td><td>12-15 years</td><td>Least Concern</td></tr>
+      <tr><td>Tasmanian Devil</td><td>Mammal</td><td>Tasmania (Australia)</td><td>5-6 years</td><td>Endangered</td></tr>
+    </tbody>
+  </table>
+</div>
+</div>
+</div>
+
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('#animalsTable').DataTable();
+    });
+  </script>
+
+</body>
+</html>
+
+  

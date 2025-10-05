@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
+  <title>Mountains</title>
+</head>
+<body>
+  <main>
+  <ul class='slider'>
+    <li class='item' style="background-image: url('img/m1.jpg')">
+      <div class='content'>
+        <h2 class='title'>"Fold Mountains"</h2>
+        <p class='description'> Fold mountains are formed when tectonic plates collide, causing the Earth's crust to buckle and fold, creating mountain ranges. These mountains are typically found at convergent plate boundaries, where plates are moving towards each other. The process of folding can take millions of years as the plates slowly compress and deform the rock layers.  </p>
+        <a href="https://en.wikipedia.org/wiki/Fold_mountains"><button class="btn btn-primary">Read More</button></a>
+      </div>
+    </li>
+
+    <li class='item' style="background-image: url('img/m2.jpg')">
+      <div class='content'>
+        <h2 class='title'>"Fault-block Mountains"</h2>
+        <p class='description'>Fault-block mountains, also known as block mountains, are formed when large blocks of the Earth's crust are uplifted or tilted along fault lines. These mountains are characterized by their steep, rugged slopes, resulting from the fracturing and displacement of the crust.   </p>
+        <a href="https://en.wikipedia.org/wiki/Fault_block"><button class="btn btn-primary">Read More</button></a>
+      </div>
+    </li>
+
+    <li class='item' style="background-image: url('img/m3_1.jpg')">
+      <div class='content'>
+        <h2 class='title'>"Volcanic Mountains"</h2>
+        <p class='description'>Volcanic mountains are landforms created by volcanic activity, specifically when molten rock (magma) erupts from the Earth's interior and solidifies on the surface. This process involves the movement of magma through cracks in the Earth's crust, followed by its eruption as lava, ash, and other materials that accumulate and build up the mountain's structure. </p>
+        <a href="https://en.wikipedia.org/wiki/Volcano"><button class="btn btn-primary">Read More</button></a>
+      </div>
+    </li>
+
+    <li class='item' style="background-image: url('img/m4.jpg')">
+      <div class='content'>
+        <h2 class='title'>"Dome Mountains"</h2>
+        <p class='description'>
+          Dome mountains have a rounded shape and form when magma pushes up the Earth’s crust without breaking through. This process creates a gentle, dome-like elevation. While not as tall or steep as some other mountains, they have a unique geological shape. Dome Mountains can also be found in many locations not just along fault lines like fold mountains.
+        </p>
+        <a href="https://en.wikipedia.org/wiki/Dome_Mountain"><button class="btn btn-primary">Read More</button></a>
+      </div>
+    </li>
+
+    <li class='item' style="background-image: url('img/m5.jpg')">
+      <div class='content'>
+        <h2 class='title'>"Plateau Mountains"</h2>
+        <p class='description'>
+          A plateau is a flat, elevated area of land that rises sharply above the surrounding terrain on at least one side. They are often described as tablelands or high plains and are characterized by their flat, elevated tops and steep slopes. Plateaus are found on every continent and make up a significant portion of the Earth's land surface. 
+        </p>
+        <a href="https://en.wikipedia.org/wiki/Plateau"><button class="btn btn-primary">Read More</button></a>
+      </div>
+    </li>
+  </ul>
+  <nav class='nav'>
+    <ion-icon class='btn prev' name="arrow-back-outline"></ion-icon>
+    <ion-icon class='btn next' name="arrow-forward-outline"></ion-icon>
+  </nav>
+</main>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<style>
+
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+}
+
+.item {
+  width: 200px;
+  height: 300px;
+  list-style-type: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  box-shadow: 0 20px 30px rgba(255,255,255,0.3) inset;
+  transition: transform 0.1s, left 0.75s, top 0.75s, width 0.75s, height 0.75s;
+
+  &:nth-child(1), &:nth-child(2) {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform: none;
+    border-radius: 0;
+    box-shadow: none;
+    opacity: 1;
+  }
+
+  &:nth-child(3) { left: 50%; }
+  &:nth-child(4) { left: calc(50% + 220px); }
+  &:nth-child(5) { left: calc(50% + 440px); }
+  &:nth-child(6) { left: calc(50% + 660px); opacity: 0; }
+}
+
+.content {
+  width: min(30vw,400px);
+  position: absolute;
+  top: 50%;
+  left: 3rem;
+  transform: translateY(-50%);
+  font: 400 0.85rem helvetica,sans-serif;
+  color: white;
+  text-shadow: 0 3px 8px rgba(0,0,0,0.5);
+  opacity: 0;
+  display: none;
+
+  & .title {
+    font-family: 'arial-black';
+    text-transform: uppercase;
+  }
+
+  & .description {
+    line-height: 1.7;
+    margin: 1rem 0 1.5rem;
+    font-size: 0.8rem;
+  }
+
+  & button {
+    width: fit-content;
+    background-color: rgba(0,0,0,0.1);
+    color: white;
+    border: 2px solid white;
+    border-radius: 0.25rem;
+    padding: 0.75rem;
+    cursor: pointer;
+  }
+}
+
+.item:nth-of-type(2) .content {
+  display: block;
+  animation: show 0.75s ease-in-out 0.3s forwards;
+}
+
+@keyframes show {
+  0% {
+    filter: blur(5px);
+    transform: translateY(calc(-50% + 75px));
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+.nav {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+  user-select: none;
+
+  & .btn {
+    background-color: rgba(255,255,255,0.5);
+    color: rgba(0,0,0,0.7);
+    border: 2px solid rgba(0,0,0,0.6);
+    margin: 0 0.25rem;
+    padding: 0.75rem;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgba(255,255,255,0.3);
+    }
+  }
+}
+
+@media (width > 650px) and (width < 900px) {
+  .content {
+    & .title        { font-size: 1rem; }
+    & .description  { font-size: 0.7rem; }
+    & button        { font-size: 0.7rem; }
+  }
+  .item {
+    width: 160px;
+    height: 270px;
+
+    &:nth-child(3) { left: 50%; }
+    &:nth-child(4) { left: calc(50% + 170px); }
+    &:nth-child(5) { left: calc(50% + 340px); }
+    &:nth-child(6) { left: calc(50% + 510px); opacity: 0; }
+  }
+}
+
+@media (width < 650px) {
+  .content {
+    & .title        { font-size: 0.9rem; }
+    & .description  { font-size: 0.65rem; }
+    & button        { font-size: 0.7rem; }
+  }
+  .item {
+    width: 130px;
+    height: 220px;
+
+    &:nth-child(3) { left: 50%; }
+    &:nth-child(4) { left: calc(50% + 140px); }
+    &:nth-child(5) { left: calc(50% + 280px); }
+    &:nth-child(6) { left: calc(50% + 420px); opacity: 0; }
+  }
+}
+
+</style>
+
+<script>
+  
+  const slider = document.querySelector('.slider');
+
+function activate(e) {
+  const items = document.querySelectorAll('.item');
+  e.target.matches('.next') && slider.append(items[0])
+  e.target.matches('.prev') && slider.prepend(items[items.length-1]);
+}
+
+document.addEventListener('click',activate,false);
+
+</script>
